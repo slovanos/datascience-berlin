@@ -1,0 +1,59 @@
+# Hidden files excluding .gitignore
+.*
+!.gitignore
+
+# Compiled Python files
+__pycache__/
+*.pyc
+
+# My local files
+my_*
+local_*
+
+# Virtual Environment
+myvenv/
+venv/
+.myvenv/
+.venv/
+
+# Env variables file (for dotenv for example)
+.env
+
+# My test files
+test*.py
+
+# Deploy, bin folders
+deploy/
+bin/
+
+# My data folders:
+
+# Ignore whole folder
+docu/
+local/
+test/
+
+# Ignore only certain files inside folder
+data/*.csv
+# if you only have that kind o files inside but whant to still track the empty directory add some extrafile inside. Like .empy
+
+# Ignore all files but track empty folder
+data/*
+!data/.empty
+
+# IDE
+.vscode/
+
+# mypy and pytest
+.mypy_cache/
+.pytest_cache/
+
+# Compact code, bins
+*.tar
+
+# Python egg metadata, regenerated from source files by setuptools.
+*.egg-info
+
+# Other
+todo.txt
+to-do.txt
