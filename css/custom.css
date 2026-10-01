@@ -21,3 +21,13 @@
     #services p{font-size:1.2em !important}
     #lead + div p{font-size:1.2em !important}
 }
+
+/* Subpages: short lead banner instead of the full-height one */
+#lead.lead-small{height:auto;min-height:0;padding:110px 15px 50px 15px}
+#lead.lead-small #lead-content{position:relative;top:auto;left:auto;transform:none}
+@media only screen and (min-width: 769px){
+    #lead.lead-small #lead-content h1{font-size:3em}
+}
+
+/* Background page: intro text above the experience timeline */
+#background-intro{max-width:1000px;margin:0 auto 50px auto;color:#74808a;font-size:1.1em;text-align:left}
