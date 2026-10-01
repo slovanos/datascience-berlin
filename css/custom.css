@@ -1,0 +1,11 @@
+/* Site overrides, loaded after styles.css */
+
+/* #services: same rules styles.css applies to the former #about */
+#services{padding:75px 15px;border-bottom:1px solid #dcd9d9}
+#services h2{color:#374054}
+#services p{color:#74808a;margin:0}
+
+@media only screen and (max-width: 992px){
+    #services{text-align:center}
+    #services p{text-align:left}
+}
