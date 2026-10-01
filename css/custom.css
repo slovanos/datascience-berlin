@@ -9,3 +9,15 @@
     #services{text-align:center}
     #services p{text-align:left}
 }
+
+/* Project media never wider than its card */
+.project-image img,.project-image video{max-width:100%}
+
+@media only screen and (max-width: 768px){
+    /* styles.css hides project media on mobile; show it stacked above the text */
+    .project-image{display:block;float:none}
+    .project-image img,.project-image video{display:block;width:100%;height:auto}
+    /* !important needed to override inline font sizes */
+    #services p{font-size:1.2em !important}
+    #lead + div p{font-size:1.2em !important}
+}
