@@ -38,3 +38,23 @@
     .project-image{flex:0 0 350px}
     .project-info{position:static;transform:none;margin-left:0;flex:1 1 auto}
 }
+
+/* Background page: portrait beside the intro, photo row, quotes */
+#background-intro-section{padding:50px 15px;border-bottom:1px solid #dcd9d9}
+#background-intro-row{display:flex;align-items:center;max-width:1000px;margin:0 auto 30px auto}
+#background-portrait{flex:0 0 auto;width:260px;height:auto;margin-right:30px;border-radius:4px}
+#background-intro-row #background-intro{margin:0}
+#background-photos{display:flex;gap:15px;max-width:1000px;margin:0 auto}
+#background-photos img{flex:1 1 0;min-width:0;height:220px;object-fit:cover;border-radius:4px}
+#quotes{padding:50px 15px;border-bottom:1px solid #dcd9d9;text-align:center}
+#quotes h2{color:#374054;margin-bottom:50px}
+.quote-block{max-width:700px;margin:0 auto 30px auto;padding:15px;border:1px solid #dcd9d9;border-left:3px solid #3498db;text-align:left}
+.quote-block p{color:#374054;font-style:italic;font-size:1.1em;margin:0 0 10px 0}
+.quote-block span{color:#74808a;font-size:0.9em}
+
+@media only screen and (max-width: 768px){
+    #background-intro-row{flex-direction:column}
+    #background-portrait{width:220px;margin:0 0 30px 0}
+    #background-photos{flex-direction:column}
+    #background-photos img{height:auto}
+}
