@@ -31,3 +31,10 @@
 
 /* Background page: intro text above the experience timeline */
 #background-intro{max-width:1000px;margin:0 auto 50px auto;color:#74808a;font-size:1.1em;text-align:left}
+
+/* Desktop cards: flex row so a card grows with its text instead of clipping it */
+@media only screen and (min-width: 769px){
+    .project{display:flex;align-items:center}
+    .project-image{flex:0 0 350px}
+    .project-info{position:static;transform:none;margin-left:0;flex:1 1 auto}
+}
