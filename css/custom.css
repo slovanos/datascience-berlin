@@ -58,3 +58,9 @@
     #background-photos{flex-direction:column}
     #background-photos img{height:auto}
 }
+
+/* Contact: email and phone below the form */
+#contact-direct{max-width:500px;margin:20px auto 0 auto;color:#fff}
+#contact-direct span{display:inline-block;margin:5px 15px}
+#contact-direct i{margin-right:5px}
+#contact-direct a{color:#fff}

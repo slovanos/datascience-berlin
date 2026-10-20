@@ -82,6 +82,16 @@
         $('header, body').removeClass('active');
     });
 
+    // Assemble contact links, kept out of the raw HTML against harvesting bots
+    $('.contact-mail').each(function() {
+        var mail = $(this).data('user') + '@' + $(this).data('domain');
+        $(this).attr('href', 'mailto:' + mail).text(mail);
+    });
+    $('.contact-tel').each(function() {
+        var parts = String($(this).data('tel')).split('|');
+        $(this).attr('href', 'tel:' + parts.join('')).text(parts.join(' '));
+    });
+
     // Load additional projects
     $('#view-more-projects').click(function(e){
         e.preventDefault();
