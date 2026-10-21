@@ -40,6 +40,9 @@
 #lead.lead-full{display:flex;align-items:center;justify-content:center;min-height:100vh}
 #lead.lead-full #lead-content{position:relative;top:auto;left:auto;transform:none}
 
+/* Imprint and privacy pages: page margin and readable line length */
+body.legal{max-width:900px;margin:0 auto;padding:30px 15px}
+
 /* Background page: intro text above the experience timeline */
 #background-intro{max-width:1000px;margin:0 auto 50px auto;color:#74808a;font-size:1.1em;text-align:left}
 
