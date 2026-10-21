@@ -1,5 +1,8 @@
 /* Site overrides, loaded after styles.css */
 
+/* Section headings bold (template uses 300) */
+.heading{font-weight:700}
+
 /* #services: same rules styles.css applies to the former #about */
 #services{padding:75px 15px;border-bottom:1px solid #dcd9d9}
 #services h2{color:#374054}
