@@ -3,6 +3,10 @@
 /* Section headings bold (template uses 300) */
 .heading{font-weight:700}
 
+/* Quote strip below the lead banner */
+#quote-strip{padding:15px;border-bottom:1px solid #dcd9d9}
+#quote-strip p{font-size:1.5em;text-align:center;margin-bottom:15px;color:#74808a}
+
 /* #services: same rules styles.css applies to the former #about */
 #services{padding:75px 15px;border-bottom:1px solid #dcd9d9}
 #services h2{color:#374054}
@@ -72,3 +76,46 @@
 .social li{font-size:1em}
 .social a{padding:10px 8px}
 .social i{margin-right:5px}
+
+/* Dark mode: follows the OS setting, overrides the template's hard-coded colours */
+@media (prefers-color-scheme: dark){
+    body{background:#1b1f27;color:#aab3bc}
+    a{color:#5dade2}
+    .background-alt{background:#222731}
+    header ul,#mobile-menu-open,#mobile-menu-close{background:#2a303b}
+    header a:hover{background:#323945;color:#5dade2}
+    .shadow,.shadow-large{box-shadow:none;border:1px solid #3a404b}
+
+    /* Headings */
+    h1,h2,h3,
+    #services h2,#skills h2,#projects h2,#experience h2,#education h2,#quotes h2,
+    .project-info h3,.vtimeline-content h3,.vtimeline-date,.education-block h3,
+    .optional-section h2,.optional-section-block h3,.quote-block p{color:#e4e7eb}
+    #lead-content h1{color:#fff}
+
+    /* Body text */
+    #quote-strip p,#services p,.project-info p,
+    .vtimeline-content h4,.vtimeline-content p,
+    .education-block span,.education-block h4,.education-block p,.education-block ul,
+    .optional-section-block h4,.optional-section-block p,.optional-section-block ul,
+    #background-intro,.quote-block span,.copyright p,.social a,.top i{color:#aab3bc}
+    .social a:hover{color:#5dade2}
+
+    /* Blocks and chips */
+    .project,.vtimeline-content,.optional-section-block{background:#2a303b}
+    #skills li{background:#323945;color:#e4e7eb}
+
+    /* Borders */
+    #quote-strip,#services,#experience,#education,#projects,#background-intro-section,#quotes,
+    .vtimeline-content,.education-block,.optional-section,.optional-section-block{border-color:#3a404b}
+    .quote-block{border-color:#3a404b;border-left-color:#3498db}
+    .top span{border-color:#5a626e}
+
+    /* Contact: dark section instead of the blue one */
+    #contact{background:#222731}
+    #contact h2,#contact-direct,#contact-direct a{color:#aab3bc}
+    #contact-form input,#contact-form textarea{background:#2a303b;color:#e4e7eb;border:1px solid #3a404b}
+    #contact-form input:focus,#contact-form textarea:focus{background:#323945;border-color:#3498db}
+    #contact-form input::placeholder,#contact-form textarea::placeholder{color:#aab3bc}
+    #contact-form button{background:#aab3bc;color:#1b1f27}
+}
