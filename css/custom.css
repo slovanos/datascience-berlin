@@ -67,3 +67,8 @@
 #contact-direct span{display:inline-block;margin:5px 15px}
 #contact-direct i{margin-right:5px}
 #contact-direct a{color:#fff}
+
+/* Footer: profile links as icon + text label */
+.social li{font-size:1em}
+.social a{padding:10px 8px}
+.social i{margin-right:5px}
