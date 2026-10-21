@@ -82,6 +82,14 @@
         $('header, body').removeClass('active');
     });
 
+    // Keyboard: Enter or Space on a role="button" element acts as a click
+    $('[role="button"]').keydown(function(e) {
+        if (e.which === 13 || e.which === 32) {
+            e.preventDefault();
+            $(this).click();
+        }
+    });
+
     // Assemble contact links, kept out of the raw HTML against harvesting bots
     $('.contact-mail').each(function() {
         var mail = $(this).data('user') + '@' + $(this).data('domain');

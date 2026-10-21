@@ -71,6 +71,8 @@
 #contact-direct span{display:inline-block;margin:5px 15px}
 #contact-direct i{margin-right:5px}
 #contact-direct a{color:#fff}
+/* Formspree honeypot field, hidden from people */
+#contact-form .honeypot{display:none}
 
 /* Footer: profile links as icon + text label */
 .social li{font-size:1em}
