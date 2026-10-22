@@ -6,6 +6,7 @@
 /* Quote strip below the lead banner */
 #quote-strip{padding:15px;border-bottom:1px solid #dcd9d9}
 #quote-strip p{font-size:1.5em;text-align:center;margin-bottom:15px;color:#74808a}
+#quote-strip p span{font-size:0.7em}
 
 /* #services: same rules styles.css applies to the former #about */
 #services{padding:75px 15px;border-bottom:1px solid #dcd9d9}
