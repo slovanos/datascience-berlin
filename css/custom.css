@@ -28,6 +28,8 @@
     /* !important needed to override inline font sizes */
     #services p{font-size:1.2em !important}
     #lead + div p{font-size:1.2em !important}
+    /* Smaller skill chips */
+    #skills li{font-size:1em;margin:4px;padding:4px 8px}
 }
 
 /* Subpages: short lead banner instead of the full-height one */
